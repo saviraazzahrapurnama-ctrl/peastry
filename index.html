@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peastry - Artisian Bakery & Pastry</title>
+    <!-- Google Fonts & FontAwesome untuk ikon -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVBAR -->
+    <header>
+     <div class="nav-container">
+        <a href="#" class="logo">P<span>ea</span>stry.</a>
+        <nav class="nav-menu" id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button type="button" class="hamburger" id="hamburger" aria-label="Buka menu navigasi">
+            <i class="fas fa-bars"></i>
+        </button>
+     </div>
+   </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="badge">Freshly Baked Every Morning</span>
+            <h1>Artisan Pastry & Bakery crafted with Love</h1>
+            <p>Nikmati kelembutan dan kerenyahan pastry premium buatan tangan yang mencair sempurna di setiap gigitan.</p>
+            <div class="hero-btns">
+                <a href="#products" class="btn btn-primary">Jelajahi Menu</a>
+                <a href="#contact" class="btn btn-secondary">Pesan Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Story</h2>
+                <p>Mengenal lebih dekat kelezatan autentik Peastry</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Tradisi Baking Klasik dengan Sentuhan Modern</h3>
+                    <p>Berdiri sejak 2024, Peastry berawal dari kecintaan mendalam terhadap seni pengolahan adonan mentega dan tepung berkualitas tinggi. Kami berkomitmen untuk menghadirkan produk *bakery* dan *pastry* berstandar cafe premium langsung ke meja Anda.</p>
+                    <div class="features-list">
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> 100% Mentega Premium Pilihan</div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> Tanpa Pengawet Buatan</div>
+                        <div class="feature-item"><i class="fas fa-check-circle"></i> Dipanggang Fresh Setiap Hari</div>
+                    </div>
+                </div>
+                <div class="about-card-visual">
+                    <div class="stat-box">
+                        <h4>100%</h4>
+                        <p>Butter Berkualitas</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4>15+</h4>
+                        <p>Varian Pastry</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+<section id="products" class="products">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Signature Products</h2>
+            <p class="section-subtitle">Pilihan menu terbaik favorit pelanggan kami</p>
+        </div>
+
+        <!-- Filter Kategori Button -->
+        <div class="filter-btns">
+            <button type="button" class="filter-btn active" data-filter="all">Semua</button>
+            <button type="button" class="filter-btn" data-filter="pastry">Pastry</button>
+            <button type="button" class="filter-btn" data-filter="bread">Bread</button>
+        </div>
+
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card" data-category="pastry">
+                <div class="product-img">
+                    <img src="assets/pastry-1.jpg" alt="Butter Croissant">
+                </div>
+                <div class="product-info">
+                    <span class="category-tag">Pastry</span>
+                    <h3>Classic Butter Croissant</h3>
+                    <p class="desc">Renyah di luar, lembut dan berongga di dalam dengan aroma mentega murni.</p>
+                    <div class="price-action">
+                        <span class="price">Rp 22.000</span>
+                        <a href="#contact" class="btn-sm">Pesan</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card" data-category="pastry">
+                <div class="product-img">
+                    <img src="assets/pastry-2.jpg" alt="Almond Pain Suisse">
+                </div>
+                <div class="product-info">
+                    <span class="category-tag">Pastry</span>
+                    <h3>Almond Pain Suisse</h3>
+                    <p class="desc">Pastry renyah dengan isian krim custard lembut dan taburan kacang almond panggang.</p>
+                    <div class="price-action">
+                        <span class="price">Rp 28.000</span>
+                        <a href="#contact" class="btn-sm">Pesan</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card" data-category="bread">
+                <div class="product-img">
+                    <img src="assets/pastry-3.jpg" alt="Garlic Cheese Bread">
+                </div>
+                <div class="product-info">
+                    <span class="category-tag">Bread</span>
+                    <h3>Korean Garlic Cheese Bread</h3>
+                    <p class="desc">Roti lembut berlumur garlic butter gurih dengan lelehan cream cheese melimpah.</p>
+                    <div class="price-action">
+                        <span class="price">Rp 30.000</span>
+                        <a href="#contact" class="btn-sm">Pesan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Peastry Moments</h2>
+                <p>Suasana dapur dan kelezatan yang kami sajikan</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="assets/pastry-1.jpg" alt="Gallery 1"></div>
+                <div class="gallery-item"><img src="assets/pastry-2.jpg" alt="Gallery 2"></div>
+                <div class="gallery-item"><img src="assets/pastry-3.jpg" alt="Gallery 3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Visit & Contact Us</h2>
+                <p>Mari terhubung atau kunjungi outlet kami</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Lokasi Outlet</h4>
+                            <p>Jl. Boulevard Selatan No.81, Kota Tangerang</p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Jam Operasional</h4>
+                            <p>Senin - Minggu: 07.00 - 21.00 WIB</p>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>WhatsApp / Telepon</h4>
+                            <p>+62 812-7204-9841</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Form Validation Interactive -->
+                <form id="orderForm" class="contact-form">
+                    <h3>Form Pemesanan Cepat</h3>
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Nama Lengkap" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="productChoice" placeholder="Produk yang ingin dipesan" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="notes" placeholder="Catatan tambahan (jumlah, waktu ambil, dll)" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Kirim Pesanan via WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Peastry Artisan Bakery. Build like a real business.</p>
+    </footer>
+
+    <!-- JAVASCRIPT LINK -->
+    <script src="script.js"></script>
+</body>
+</html>
